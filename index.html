@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Rehabilitasi D.I. Kalbar 2025</title>
+    <link rel="icon" href="Gambar/Logo Kementerian PUPR (PNG-240p) - FileVector69.png" type="image/png">
+    <style>
+        /* Reset dan Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: url('Gambar/DJI_0017.JPG') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5%; /* Mengurangi padding untuk tampilan lebih baik */
+            background: linear-gradient(90deg, rgba(255, 255, 0, 0.8), rgba(0, 0, 255, 0.8)); /* Gradasi kuning ke biru */
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 500px; /* Atur lebar gambar menjadi 500px */
+            height: auto; /* Menjaga proporsi gambar */
+            margin-right: 10px; /* Ruang antara gambar dan teks */
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #0072ff;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #00c6ff;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #00c6ff;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            position: relative;
+            color: #ffffff; /* Warna teks */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1::before {
+            content: attr(data-text); /* Menggunakan data-text untuk efek outline */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-color: rgba(0, 204, 255, 0.8);
+            z-index: -1;
+            filter: blur(2px); /* Efek blur untuk outline */
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 80px 5%;
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.8), rgba(0, 0, 255, 0.8)); /* Gradasi kuning ke biru */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: white; /* Warna teks menjadi putih untuk kontras */
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #004d00; /* Latar belakang hijau tua */
+            position: relative;
+        }
+
+        .section h2::before {
+            content: attr(data-text); /* Menggunakan data-text untuk efek outline */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-color: rgba(0, 204, 255, 0.8);
+            z-index: -1;
+            filter: blur(2px); /* Efek blur untuk outline */
+        }
+
+        /* Button Styles */
+        .button {
+            display: block;
+            padding: 10px 20px;
+            margin: 10px auto;
+            background-color: #004d00; /* Warna tombol hijau tua */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            width: fit-content;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #006600; /* Warna tombol saat hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="Gambar/Logo BWSK1.png" alt="Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 data-text="Selamat Datang di Sistem Informasi Geografis (SIG) Oplah Kalbar 2025">Selamat Datang di Sistem Informasi Geografis (SIG) Oplah Kalbar 2025</h1>
+        <p class="fade-in" style="animation-delay: 0.3s;">Sistem informasi geografis ini menyajikan data pekerjaan Rehabilitasi Jaringan Pada D.I./D.I.R Kewenangan Daerah di Provinsi Kalimantan Barat. Dengan sasaran Program untuk meningkatnya Dukungan swasembada Air Nasional, Adapun Lingkup pekerjaan disajikan dalam bentuk peta di bawah ini:</p>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="section">
+        <h2 data-text="Peta Rehabilitasi Jaringan Irigasi di Wilayah Kalimantan Barat">Peta Rehabilitasi Jaringan Irigasi di Wilayah Kalimantan Barat</h2>
+        <a href="https://peta-oplah-paket1.netlify.app/" class="button">Peta Area Oplah Paket 1</a>
+        <a href="https://peta-oplah-paket2.netlify.app/" class="button">Peta Area Oplah Paket 2</a>
+        <a href="#" class="button" onclick="showComingSoon()">Peta Lingkup Pekerjaan Paket 1</a>
+        <a href="#" class="button" onclick="showComingSoon()">Peta Lingkup Pekerjaan Paket 2</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kementerian PUPR. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk menampilkan pop-up "Coming soon"
+        function showComingSoon() {
+            alert("Coming soon");
+        }
+
+        // Efek Header saat Scroll
+        window.addEventListener('scroll', function() {
+            const scrollingHeader = document.querySelector('.scrolling-header');
+            if (window.scrollY > 200) {
+                scrollingHeader.style.top = '0';
+            } else {
+                scrollingHeader.style.top = '-100px';
+            }
+        });
+
+        // Smooth scrolling untuk tautan navigasi
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animasi fade-in saat scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const appearOptions = {
+            threshold: 0.5,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        fadeElements.forEach(fadeElement => {
+            appearOnScroll.observe(fadeElement);
+        });
+    </script>
+</body>
+</html>
