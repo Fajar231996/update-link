@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistem Informasi Geografis (SIG) Oplah Kalbar 2025 untuk rehabilitasi jaringan irigasi.">
+    <meta name="keywords" content="SIG, Kalbar, rehabilitasi, irigasi, peta">
     <title>Peta Rehabilitasi D.I. Kalbar 2025</title>
     <link rel="icon" href="Gambar/Logo Kementerian PUPR (PNG-240p) - FileVector69.png" type="image/png">
     <style>
@@ -29,22 +31,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 5%; /* Mengurangi padding untuk tampilan lebih baik */
-            background: linear-gradient(90deg, rgba(255, 255, 0, 0.8), rgba(0, 0, 255, 0.8)); /* Gradasi kuning ke biru */
+            padding: 10px 5%;
+            background: linear-gradient(90deg, rgba(255, 255, 0, 0.8), rgba(0, 0, 255, 0.8));
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
             z-index: 1000;
             transition: all 0.3s ease;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
         .logo img {
-            width: 500px; /* Atur lebar gambar menjadi 500px */
-            height: auto; /* Menjaga proporsi gambar */
-            margin-right: 10px; /* Ruang antara gambar dan teks */
+            width: 500px;
+            height: auto;
+            margin-right: 10px;
         }
 
         .nav-links {
@@ -100,12 +97,12 @@
             font-size: 48px;
             margin-bottom: 20px;
             position: relative;
-            color: #ffffff; /* Warna teks */
+            color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero h1::before {
-            content: attr(data-text); /* Menggunakan data-text untuk efek outline */
+            content: attr(data-text);
             position: absolute;
             left: 0;
             top: 0;
@@ -114,7 +111,7 @@
             background-clip: text;
             background-color: rgba(0, 204, 255, 0.8);
             z-index: -1;
-            filter: blur(2px); /* Efek blur untuk outline */
+            filter: blur(2px);
         }
 
         .hero p {
@@ -127,7 +124,7 @@
         /* Content Sections */
         .section {
             padding: 80px 5%;
-            background: linear-gradient(135deg, rgba(255, 255, 0, 0.8), rgba(0, 0, 255, 0.8)); /* Gradasi kuning ke biru */
+            background: linear-gradient(135deg, rgba(255, 255, 0, 0.8), rgba(0, 0, 255, 0.8));
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin: 20px 0;
@@ -136,16 +133,16 @@
         .section h2 {
             font-size: 36px;
             margin-bottom: 30px;
-            color: white; /* Warna teks menjadi putih untuk kontras */
+            color: white;
             text-align: center;
             padding: 10px;
             border-radius: 5px;
-            background-color: #004d00; /* Latar belakang hijau tua */
+            background-color: #004d00;
             position: relative;
         }
 
         .section h2::before {
-            content: attr(data-text); /* Menggunakan data-text untuk efek outline */
+            content: attr(data-text);
             position: absolute;
             left: 0;
             top: 0;
@@ -154,7 +151,7 @@
             background-clip: text;
             background-color: rgba(0, 204, 255, 0.8);
             z-index: -1;
-            filter: blur(2px); /* Efek blur untuk outline */
+            filter: blur(2px);
         }
 
         /* Button Styles */
@@ -162,7 +159,7 @@
             display: block;
             padding: 10px 20px;
             margin: 10px auto;
-            background-color: #004d00; /* Warna tombol hijau tua */
+            background-color: #004d00;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -172,7 +169,7 @@
         }
 
         .button:hover {
-            background-color: #006600; /* Warna tombol saat hover */
+            background-color: #006600;
         }
 
         /* Footer */
@@ -221,30 +218,32 @@
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="#" class="logo">
-            <img src="Gambar/Logo BWSK1.png" alt="Logo">
+    <header class="navbar">
+        <a href="#" class="logo" aria-label="Logo Kementerian PUPR">
+            <img src="Gambar/Logo BWSK1.png" alt="Logo Kementerian PUPR">
         </a>
-        <ul class="nav-links">
-            <li><a href="#">Beranda</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Beranda</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1 data-text="Selamat Datang di Sistem Informasi Geografis (SIG) Oplah Kalbar 2025">Selamat Datang di Sistem Informasi Geografis (SIG) Oplah Kalbar 2025</h1>
-        <p class="fade-in" style="animation-delay: 0.3s;">Sistem informasi geografis ini menyajikan data pekerjaan Rehabilitasi Jaringan Pada D.I./D.I.R Kewenangan Daerah di Provinsi Kalimantan Barat. Dengan sasaran Program untuk meningkatnya Dukungan swasembada Air Nasional, Adapun Lingkup pekerjaan disajikan dalam bentuk peta di bawah ini:</p>
-    </section>
+    <main>
+        <section class="hero">
+            <h1 data-text="Selamat Datang di Sistem Informasi Geografis (SIG) Oplah Kalbar 2025">Selamat Datang di Sistem Informasi Geografis (SIG) Oplah Kalbar 2025</h1>
+            <p class="fade-in" style="animation-delay: 0.3s;">Sistem informasi geografis ini menyajikan data pekerjaan Rehabilitasi Jaringan Pada D.I./D.I.R Kewenangan Daerah di Provinsi Kalimantan Barat. Dengan sasaran Program untuk meningkatnya Dukungan swasembada Air Nasional, Adapun Lingkup pekerjaan disajikan dalam bentuk peta di bawah ini:</p>
+        </section>
 
-    <!-- Content Sections -->
-    <section class="section">
-        <h2 data-text="Peta Rehabilitasi Jaringan Irigasi di Wilayah Kalimantan Barat">Peta Rehabilitasi Jaringan Irigasi di Wilayah Kalimantan Barat</h2>
-        <a href="https://peta-oplah-paket1.netlify.app/" class="button">Peta Area Oplah Paket 1</a>
-        <a href="https://peta-oplah-paket2.netlify.app/" class="button">Peta Area Oplah Paket 2</a>
-        <a href="https://peta-oplah-paket2.netlify.app/" class="button">Peta Lingkup Pekerjaan Paket 1</a>
-        <a href="https://www.youtube.com/" class="button">Youtube</a>
-    </section>
+        <section class="section">
+            <h2 data-text="Peta Rehabilitasi Jaringan Irigasi di Wilayah Kalimantan Barat">Peta Rehabilitasi Jaringan Irigasi di Wilayah Kalimantan Barat</h2>
+            <a href="https://peta-oplah-paket1.netlify.app/" class="button">Peta Area Oplah Paket 1</a>
+            <a href="https://peta-oplah-paket2.netlify.app/" class="button">Peta Area Oplah Paket 2</a>
+            <a href="https://peta-oplah-paket2.netlify.app/" class="button">Peta Lingkup Pekerjaan Paket 1</a>
+            <a href="https://www.youtube.com/" class="button">Youtube</a>
+            <a href="https://www.facebook.com/" class="button">Facebook</a> <!-- Tombol Facebook ditambahkan di sini -->
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2023 Kementerian PUPR. Semua hak dilindungi.</p>
